@@ -1,0 +1,554 @@
+body {
+    background-color: #050F1A;
+    color: #CFE3EA;
+    font-family: K2D;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+p {
+    color: #CFE3EA;
+}
+
+
+
+/* Navigation styling */
+
+.nav-default {
+    padding: 0px 30px;
+    height: 80px;
+    font-size: 20px;
+    background-color: #182635;
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-home {
+    padding: 0px 30px;
+    height: 80px;
+    font-size: 20px;
+    background-color: #050F1A;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo-default {
+    margin-top: 5px;
+}
+
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
+    background-image: linear-gradient(#EF4043, #C43240);
+    background-color: #EF4043;
+    border: none;
+    color: #CFE3EA;
+}
+
+.btn-danger:hover {
+    background-image: none;
+}
+
+#register {
+    height: 46px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 16px;
+    float: right;
+}
+
+.nav-link {
+    color: #CFE3EA;
+    margin-top: 16px;
+    float: right;
+    margin-right: 40px;
+}
+
+.nav-link:hover {
+    color: #72BAD5;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    padding-top: 26px;
+}
+
+.dropdown-item {
+    color: #CFE3EA;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* Footer styling */
+
+.footer {
+    background-color: #182635;
+    height: 200px;
+    align-content: center;
+    padding: 0px 70px;
+    margin-top: auto;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.footer-info {
+    float: right;
+    text-align: right;
+}
+
+
+
+/* Homepage banner styling */
+
+.banner {
+    width: 100%;
+    height: 354px;
+    position: relative;
+    text-align: center;
+}
+
+.banner-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.banner-top {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+}
+
+.banner-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+}
+
+
+
+/* General title styling */
+
+.page-title {
+    color: #72BAD5;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.section-title {
+    color: #72BAD5;
+}
+
+
+
+/* All vehicles */
+
+#cars-available {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.vehicle-list {
+    margin-top: 35px;
+    width: 1290px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vehicle-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.single-vehicle {
+    width: 300px;
+}
+
+.vehicle-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 25px;
+    background-image: linear-gradient(to top, black, transparent);
+}
+
+.vehicle-name {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.vehicle-link {
+    color: #CFE3EA;
+}
+
+.vehicle-link:hover {
+    color: #72BAD5;
+}
+
+.single-vehicle:nth-child(n+5) {
+    display: none;
+}
+
+/*.more {
+    display: none;
+}*/
+
+/*#more .vehicle-row {
+    margin-top: 30px;
+} */
+
+#moreButton {
+    color:#EF4043;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+}
+
+#moreButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* Log in page styling */
+
+.log-in {
+    text-align: center;
+}
+
+.log-in-form {
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.log-in-form input[type=text], .log-in-form input[type=password], .log-in-form input[type=email] {
+    height: 55px;
+    margin-bottom: 15px;
+    background-color: #182635;
+    border-color: #CFE3EA;
+    border-radius: 10px;
+    color: #CFE3EA;
+}
+
+.log-in-form input:focus{
+    background-color: #182635;
+    color: #CFE3EA;
+}
+
+.log-in-form a {
+    color: #EF4043;
+}
+
+.submit {
+    width: 425px;
+    height: 55px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #EF4043;
+}
+
+.submit,
+.submit:hover,
+.submit:active,
+.submit:visited {
+    background-image: linear-gradient(#EF4043, #C43240);
+    background-color: #EF4043;
+    color: #CFE3EA;
+}
+
+.submit:hover {
+    background-image: none;
+}
+
+
+
+/* Single vehicle page styling */
+
+.back {
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.back a {
+    color: #EF4043;
+}
+
+.vehicle-full {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.vehicle-page-img {
+    width: 500px;
+    max-height: 500px;
+    border-radius: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.vehicle-details {
+    text-align: center;
+    padding-bottom: 60px;
+    flex-grow: 1;
+}
+
+.single-vehicle-name {
+    color: #72BAD5;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.vehicle-specs {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 1px;
+}
+
+.vehicle-row {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.underline {
+    flex-grow: 1;
+    border-bottom: 1px solid #72BAD5;
+}
+
+.vehicle-specs i {
+    color: #EF4043;
+}
+
+
+
+/* Wishlist styling */
+
+.wishlist-signin {
+    border-color: #182635;
+}
+
+.wishlist-signin:hover {
+    background-color: #182635;
+    color: #CFE3EA;
+    border-color: #CFE3EA;
+}
+
+.wishlist-add, .wishlist-signin {
+    width: 500px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.wishlist-add {
+    background-image: linear-gradient(#EF4043, #C43240);
+    background-color: #EF4043;
+    color: #CFE3EA;
+    border: none;
+}
+
+.wishlist-add:hover {
+    background-color: #EF4043;
+    background-image: none;
+    color: #CFE3EA;
+}
+
+.vehicle-desc {
+    margin-top: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.wishlist-full {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.wishlist-vehicle {
+    display: inline-block;
+}
+
+.wishlist-vehicle-img {
+    width: 300px;
+    border-radius: 25px;
+    float: left;
+    margin-right: 50px;
+}
+
+.wishlist-vehicle-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.wishlist-vehicle a {
+    color: #EF4043;
+}
+
+.results {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.result-vehicle {
+    display: inline-block;
+}
+
+.result-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    float: left;
+}
+
+.result-details {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.result-title {
+    margin-bottom: 20px;
+}
+
+.result-title a {
+    color: #72BAD5;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.result-desc {
+    color: #CFE3EA;
+}
+
+.wishlistStar {
+    color: #EF4043;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.wishlistStar:hover {
+    cursor: pointer;
+}
+
+.result-top {
+    display: flex;
+    gap: 30px;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.page-link {
+    background-color: #182635;
+    color: #CFE3EA;
+}
+
+.page-link:hover {
+    background-color: #050F1A;
+    color: #CFE3EA;
+}
+
+
+
+/* Admin homepage styling */
+
+.add-new {
+    color: #72BAD5;
+    margin-left: 200px;
+}
+
+.admin-vehicles {
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.admin-vehicle-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-vehicle-img {
+    width: 250px;
+    max-height: 250px;
+    border-radius: 25px;
+}
+
+.admin-vehicle-details {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.admin-vehicle-name {
+    flex-grow: 1;
+}
+
+.admin-vehicle-details a {
+    color: #72BAD5;
+}
+
+.admin-vehicle-details a:hover {
+    color: #CFE3EA;
+}
+
+.fa-trash {
+    color: #EF4043;
+}
+
+.fa-trash:hover {
+    color: #C43240;
+}
