@@ -1,0 +1,19 @@
+{
+  "name": "carland",
+  "version": "1.0.0",
+  "description": "Vision College assessment DWD 506",
+  "main": "index.js",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tasmire/carland.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tasmire/carland/issues"
+  },
+  "homepage": "https://github.com/Tasmire/carland#readme"
+}
